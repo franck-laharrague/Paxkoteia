@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Actualités — Ferme Paxkoteia</title>
+<meta name="description" content="Les nouvelles de la ferme Paxkoteia à Lohitzun-Oyhercq : le chantier du lieu d'accueil pour les jeunes de l'ASE, la vie du troupeau, les rendez-vous à la ferme." />
+<meta name="theme-color" content="#8a3324" />
+<link rel="canonical" href="https://franck-laharrague.github.io/Paxkoteia/actualites.html" />
+<!-- Aperçu au partage -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ferme Paxkoteia" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="https://franck-laharrague.github.io/Paxkoteia/actualites.html" />
+<meta property="og:title" content="Actualités de la ferme Paxkoteia" />
+<meta property="og:description" content="Le chantier du lieu d'accueil, la vie du troupeau, les rendez-vous à la ferme — racontés par Edouard." />
+<meta property="og:image" content="https://franck-laharrague.github.io/Paxkoteia/assets/partage-paxkoteia.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Edouard Exilard, son chien et son troupeau de brebis Manech Tête Rousse" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+<!-- ============ TOP NAV ============ -->
+<header class="top">
+  <div class="container nav">
+    <a href="./" class="brand">
+      Paxkoteia
+      <small>Ferme d'Edouard Exilard · Pays Basque</small>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="./#histoire">L'histoire</a>
+      <a href="./#ferme">La ferme</a>
+      <a href="./#engagement">Engagement</a>
+      <a href="actualites.html" aria-current="page">Actualités</a>
+      <a href="./#agrotourisme">Agrotourisme</a>
+      <a href="ecrin-protecteur.html" class="nav-cta">Le projet d'accueil</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ EN-TÊTE ============ -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('assets/photos/journees-portes-ouvertes.jpg');"></div>
+  <div class="container">
+    <p class="fil-ariane"><a href="./">Accueil</a> › Actualités</p>
+    <span class="eyebrow">Lohitzun-Oyhercq · Soule</span>
+    <h1>Les nouvelles de Paxkoteia</h1>
+    <p class="lede">
+      Le chantier du lieu d'accueil, la vie du troupeau, les rendez-vous à la ferme —
+      racontés par Edouard.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ARTICLES (remplis par js/actualites.js depuis actualites/articles.json) ============ -->
+<section class="actus-liste">
+  <div class="container" data-actus="liste">
+    <p class="actus-attente">Chargement des actualités…</p>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" alt="" />
+  <p class="cap" id="lightbox-cap"></p>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bottom">
+  <div class="container">
+    <p><strong style="color:#fdf6e3;">Ferme Paxkoteia</strong> — Edouard Exilard · Lohitzun-Oyhercq</p>
+    <div class="footer-divider"></div>
+    <p>EARL PAXKOTEIA · SIREN 384 013 975 · Certification AB ECOCERT · AOP Ossau-Iraty</p>
+    <p style="margin-top:0.8rem;">
+      <a href="./">Accueil</a> · <a href="ecrin-protecteur.html">Le projet d'accueil</a> · <a href="https://bluebees.fr/fr/project/1474-paxkoteia" target="_blank" rel="noopener">La campagne Bluebees</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/actualites.js"></script>
+
+</body>
+</html>

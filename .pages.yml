@@ -1,0 +1,100 @@
+# Configuration de Pages CMS — https://app.pagescms.org
+# Permet à Edouard d'écrire les actualités du site depuis un formulaire en ligne,
+# sans toucher au code. Mode d'emploi : GUIDE-ACTUALITES.md
+
+media:
+  - name: actualites
+    label: Photos et vidéos des actualités
+    input: assets/actualites
+    output: assets/actualites
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, gif, mp4, webm]
+
+settings:
+  commit:
+    templates:
+      create: "Actualités : ajout de {path}"
+      update: "Actualités : mise à jour de {path}"
+      delete: "Actualités : suppression de {path}"
+      rename: "Actualités : {oldPath} renommé en {newPath}"
+
+content:
+  - name: actualites
+    label: Actualités
+    type: file
+    path: actualites/articles.json
+    format: json
+    fields:
+      - name: articles
+        label: Articles
+        description: Un bloc par article. Le site les range tout seul du plus récent au plus ancien.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date} — {titre}"
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            required: true
+          - name: date
+            label: Date
+            type: date
+            required: true
+            options:
+              format: yyyy-MM-dd
+          - name: publie
+            label: Visible sur le site
+            description: Décochez pour garder l'article en brouillon.
+            type: boolean
+            default: true
+          - name: resume
+            label: Résumé
+            description: 1 à 3 phrases, affichées sur la page d'accueil et en tête de l'article.
+            type: text
+          - name: photo
+            label: Photo principale
+            type: image
+            options:
+              media: actualites
+              extensions: [jpg, jpeg, png, webp, gif]
+          - name: texte
+            label: Texte de l'article
+            description: Gras, intertitres, listes, liens (icône chaîne) et photos dans le texte sont possibles.
+            type: rich-text
+            options:
+              format: html
+              media: actualites
+          - name: video
+            label: Vidéo (lien)
+            description: Collez l'adresse d'une vidéo YouTube, Vimeo ou Facebook.
+            type: string
+          - name: video_fichier
+            label: Vidéo (fichier)
+            description: Seulement pour une vidéo courte (MP4, moins de 50 Mo). Pour une vidéo longue, publiez-la sur YouTube et collez le lien ci-dessus.
+            type: file
+            options:
+              media: actualites
+              extensions: [mp4, webm]
+          - name: photos
+            label: Galerie de photos
+            description: Plusieurs photos possibles ; un clic les agrandit sur le site.
+            type: image
+            options:
+              media: actualites
+              extensions: [jpg, jpeg, png, webp, gif]
+              multiple:
+                max: 30
+          - name: liens
+            label: Boutons de liens
+            description: Affichés en bas de l'article (ex. « Réserver un colis », « Voir l'article de presse »).
+            type: object
+            list: true
+            fields:
+              - name: texte
+                label: Texte du bouton
+                type: string
+              - name: url
+                label: Adresse (https://…)
+                type: string
