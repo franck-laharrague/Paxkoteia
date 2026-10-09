@@ -12,7 +12,7 @@ Publier une actualité (Pages CMS) : voir `GUIDE-ACTUALITES.md`.
 
 - Site statique, **sans compilation ni dépendance** : HTML, CSS et JavaScript simples.
 - Publié par **GitHub Pages depuis la branche `main`** : fusionner dans `main` = mettre en ligne.
-- Adresse supposée : `https://franck-laharrague.github.io/Paxkoteia/`, utilisée dans
+- Adresse : `https://franck-laharrague.github.io/Paxkoteia/` (vérifiée le 2026-10-09), utilisée dans
   `og:url`, `og:image` et `canonical` des trois pages. À changer partout si un nom de
   domaine est ajouté.
 
@@ -56,14 +56,18 @@ Publier une actualité (Pages CMS) : voir `GUIDE-ACTUALITES.md`.
 ## À faire / à vérifier
 
 - [ ] Fusionner `mise-a-jour-actualites-bluebees` dans `main` pour publier.
-- [ ] Vérifier sur la page Bluebees les chiffres repris sur le site : **7 295 €**
-      collectés, objectif **6 000 €**, **51** contributeurs, paliers 6 000 € (sols et
-      carrelage) et 7 500 € (électricité). Ils ont été lus dans des extraits de recherche
-      web, bluebees.fr n'étant pas accessible depuis la session cloud.
-- [ ] **Séverina ou Séverine ?** La campagne écrit « Séverine », le site « Séverina »
-      (orthographe gardée en attendant).
-- [ ] Confirmer **46 hectares** et **35 ans** (avant : 40 ha et 30 ans).
-- [ ] Confirmer l'adresse publique du site (voir « Publication »).
+- [x] Chiffres Bluebees vérifiés sur bluebees.fr le 2026-10-09 (campagne close) : **7 295 €**,
+      **94 contributeurs** (et non 51), paliers 4 000 € (isolation), 6 000 € (sols et
+      carrelage), 7 500 € (électricité, atteint à 97 %), 10 000 € (3 chambres). **Aucun objectif
+      n'est affiché** : le site parle de « projet financé », sans « objectif » ni pourcentage global
+      (décision de Franck). Installation en 1991 (35 ans), 46 ha et 230 m² confirmés.
+- [x] **Séverina** (confirmé par Franck le 2026-10-09 ; Bluebees écrit « Severine »).
+- [x] Confirmés par Franck le 2026-10-09 : chiffres de la noyade (70 brebis emportées, 32 perdues,
+      plus de 200 donateurs, plus de 11 000 €, une cinquantaine de personnes le 3 novembre 2024),
+      maïs population, merguez et chipolatas.
+- [x] Adresse publique confirmée : GitHub Pages publie `main` sur
+      `https://franck-laharrague.github.io/Paxkoteia/` (pas de nom de domaine).
+- [ ] Action photos : elle ne retire le GPS que des photos de plus de 900 Ko.
 - [ ] Mettre en place Pages CMS et inviter Edouard (`GUIDE-ACTUALITES.md`, partie 1).
 - [ ] Idée : rendre les vignettes de la galerie accessibles au clavier (aujourd'hui des
       `<div>` cliquables).
